@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Inter:wght@300;600&display=swap');
+
+:root {
+    --ama1: #fff9e4;
+    --ama2: #fce99e;
+    --ama3: #b4ac89;
+    --azul1: #242868;
+    --azul2: #5E63B6;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'inter', arial, sans-serif;
+}
+
+body {
+    background-color: var(--ama1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--ama2), var(--ama1));
+}
+
+header h1 {
+    font: normal normal 4em 'Bad script', cursive;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 0px 10px;
+}
+
+.menu {
+    text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.5);
+    list-style: none;
+    background-color:var(--ama1);
+    border-bottom: 1px solid var(--ama3);
+    float: left;
+    width: 100%;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li a {
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;
+    margin: 0px;
+}
+
+.menu li a:visited {
+    color: black;
+}
+
+.menu li a:hover {
+    background-color: var(--ama3);
+    color: white;
+}
+
+.menu li a:active {
+    color: var(--ama2);
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: var(--ama1);
+    display: none;
+}
+
+.menu li ul a {
+    display: block;
+    width: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid var(--ama3);
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 27px;
+    padding: 2em 10px 10px 10px;
+    text-align: justify;
+    line-height: 1.7em;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+main ul, ol {
+    list-style-position: inside;
+}
+
+main h2 {
+    margin-bottom: 1em;
+    color: var(--azul1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+main p {
+    text-indent: 1em;
+}
+
+main strong {
+    color: var(--azul2);
+}
+
+main img {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.parte1 h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0.5);
+}
+
+.parte1 p {
+    margin: 1em 0px;
+}
+
+.parte2 p {
+    margin-top: 1em;
+}
+
+.parte3 ol {
+    margin-bottom: 1em;
+}
+
+.parte3 ol li {
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.parte3 ol li p {
+    margin-top: .5em;
+    font-weight: normal;
+}
+
+.parte3 ol ul {
+    text-indent: 1em;
+}
+
+.parte3 ol ul li {
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+aside p {
+    margin-top: 1em;
+}
+
+footer {
+    background-color: var(--ama3);
+    margin-top: 10px;
+    text-align: center;
+    font-size: .8em;
+}
